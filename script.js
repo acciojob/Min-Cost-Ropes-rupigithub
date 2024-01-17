@@ -5,10 +5,10 @@ function mincost(arr)
 	arr.sort();
   let min_cost = 0;
 	let ref_cost = 0;
-	arr.foreach(v => {
-		ref_cost += v;
+	for(let i=0; i< arr.length; i++){
+		ref_cost += arr[i];
 		min_cost += ref_cost;
-	})
+	}
 	return min_cost;
 }
 
